@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
@@ -437,5 +437,5 @@ window.addEventListener('beforeunload',function(){Object.values(photoUrls).forEa
 async function init(){try{await initDB();await loadAllData();loadTheme();loadSize();loadBg();loadSsSpeed();loadRatio();loadAccent();loadCompressSetting();renderAccentPresets();setViewMode(getViewMode());document.getElementById('masonry-toggle').classList.toggle('active',getMasonryMode());document.getElementById('group-toggle').classList.toggle('active',getDateGroupMode());loadSort();updateTrashCount();renderAlbums();renderAlbumTabs();renderGallery();updateUploadHint();updateStorageInfo()}catch(e){console.error('Init error:',e);toast('Ошибка инициализации БД','error')}}
 init();
 </script>
-</body>
+<script src="loader.js"></script></body>
 </html>
